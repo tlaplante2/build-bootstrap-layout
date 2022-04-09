@@ -8,10 +8,77 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Bootstrap Layout In-Class</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header>
+      <div class="container container-md container-xl">
+        <h1 class="visually-hidden">Bootstrap Layout In-Class</h1>
+        <nav class="navbar">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Location</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container container-md container-xl">
+      <section class="bg-dark text-light col-12 p-3 mb-5 mt-5 rounded-2">
+        <h2>HEADER BANNER AREA</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ipsam assumenda ullam. Labore vero vel accusantium consectetur nisi iure ab veniam laborum nihil, sapiente voluptatem unde blanditiis quasi culpa voluptas rem inventore impedit quaerat quos?</p>
+      </section>
+    </div>
+
+
+    <div class="container container-md container-xl">
+      <div class="row">
+        <div class="col-12 col-md-12 col-xl-6">
+          <section class="bg-primary text-light p-3">
+            <form action="#" method="get" name="signin-form">
+              <h2>Sign In</h2>
+              <div class="mb-3">
+                <label class="form-label" for="email">Your Email</label>
+                <input class="form-control" id="email" type="email">
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-control" id="password" type="password">
+              </div>
+              <div class="mb-3">
+                <input class="form-check-input" id="save-pw" type="checkbox">
+                <label class="form-label" for="save-pw">Save Password</label>
+              </div>
+              <input class="btn btn-light" type="button" value="Login">
+            </form>
+          </section>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 mb-3 mt-3">
+          <section>
+            <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione excepturi soluta omnis sed hic ipsa, minima eligendi beatae non, eum eos blanditiis. Voluptatem aperiam cumque aut nostrum nulla beatae, facere maiores quidem atque? Quas, nostrum?</p>
+            <a class="btn btn-primary text-light" href="#">View More</a>
+          </section>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 mb-3 mt-3">
+          <section>
+            <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione excepturi soluta omnis sed hic ipsa, minima eligendi beatae non, eum eos blanditiis. Voluptatem aperiam cumque aut nostrum nulla beatae, facere maiores quidem atque? Quas, nostrum?</p>
+            <a class="btn btn-primary text-light" href="#">View More</a>
+          </section>
+        </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
